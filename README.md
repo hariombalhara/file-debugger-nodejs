@@ -20,6 +20,14 @@ Run script with a require of `file-debugger`
 
 `node -r file-debugger your_file_with_hundreds_of_deps.js`
 
+### Configuration using environment variables
+
+Enable Logging using `FILE_DEBUGGER_DEBUG_LOG="1"`
+<img src="./screenshots/logging.png" alt="Logging Demo" />
+
+Enable automatic debugger using `FILE_DEBUGGER_TRACE_THIS="SUBSTRING_MATCHING_FILE_PATH_NAME"`
+<img src="./screenshots/debugger.png" alt="Debugger Demo" />
+
 
 Optionally you can install locally but you would have to repeat it for every project
 
