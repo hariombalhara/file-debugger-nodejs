@@ -13,6 +13,14 @@ Debugs files being accessed by any NodeJS dependency.
 
 ## Usage
 
-`npm i file-debugger --save-dev`
+Global Installation - Recommended, so that you install it once and can use it in all your projects
+`npm i file-debugger -g`
+
+Run script with a require of `file-debugger`
 
 `node -r file-debugger your_file_with_hundreds_of_deps.js`
+
+
+Optionally you can install locally but you would have to repeat it for every project
+
+`npm i file-debugger --save-dev`
