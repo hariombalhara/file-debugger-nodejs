@@ -3,6 +3,7 @@
   "version": "0.1.3",
   "description": "Debugs files being accessed by any NodeJS dependency.",
   "main": "index.js",
+  "keywords": ["debugger", "file", "reading", "breakpoint", "dependencies"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
