@@ -17,8 +17,8 @@ const debug = (...args) => {
 
 log(`File Debugger is included.`);
 
-if (FILE_DEBUGGER_TRACE_THIS) {
-	log(`Any time file that has ${FILE_DEBUGGER_TRACE_THIS} in it's pathname, a breakpoint would be automatically added`)
+if (fileToTrace) {
+	log(`Any time file that has ${fileToTrace} in it's pathname, a breakpoint would be automatically added`)
 }
 
 if (enableDebugLogs) {
