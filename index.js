@@ -18,7 +18,7 @@ const debug = (...args) => {
 log(`File Debugger is included.`);
 
 if (fileToTrace) {
-	log(`Any time file that has ${fileToTrace} in it's pathname, a breakpoint would be automatically added`)
+	log(`Any time a file is read that has ${fileToTrace} in it's pathname, a breakpoint would be automatically added`)
 }
 
 if (enableDebugLogs) {
