@@ -15,10 +15,15 @@ const debug = (...args) => {
 	console.log(...args);
 };
 
-log(`File Debugger is included. 
-- Any time a file is read, it can be automatically debugged(Node Debugger) by passing env variable FILE_DEBUGGER_TRACE_THIS="SUBSTRING".
-- You can log all files being read by setting env variable FILE_DEBUGGER_DEBUG_LOG=1
-`);
+log(`File Debugger is included.`);
+
+if (FILE_DEBUGGER_TRACE_THIS) {
+	log(`Any time file that has ${FILE_DEBUGGER_TRACE_THIS} in it's pathname, a breakpoint would be automatically added`)
+}
+
+if (enableDebugLogs) {
+	log(`All files' reads will be logged`);
+}
 
 const trace = (fileName) => {
 	debug("Reading file", fileName);

@@ -10,5 +10,5 @@ Debugs files being accessed by any NodeJS dependency.
 ## Usage
 
 `npm i file-debugger --save-dev`
-`npm i file-debugger -g`
+
 `node -r file-debugger your_file_with_hundreds_of_deps.js`
