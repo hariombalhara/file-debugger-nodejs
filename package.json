@@ -1,6 +1,6 @@
 {
   "name": "file-debugger",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Debugs files being accessed by any NodeJS dependency.",
   "main": "index.js",
   "keywords": [
